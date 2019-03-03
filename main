@@ -1,0 +1,115 @@
+import turtle
+
+def draw_square(some_turtle):
+
+    for i in range (1,5):
+        some_turtle.forward(300)
+        some_turtle.right(90)
+
+def draw_art():
+    window = turtle.Screen()
+    window.bgcolor("blue")
+    first= turtle.Turtle()
+    first.shape("turtle")
+    first.color("#ecf0f1")
+    first.speed(0)
+    first.pensize(2)
+    for i in range(1,37):
+        draw_square(first)
+        first.right(10)
+def draw_sqaure():
+
+    second = turtle.Screen()
+    second.shape("turtle")
+    second.color("pink")
+    second.speed(0)
+    second.pensize(2)
+    size=1
+    while (True):
+        second.forward(size)
+        second.right(91)
+        size = size + 1
+
+    window.exitonclick()
+
+draw_art()
+
+def draw_art():
+    window = turtle.Screen()
+    window.bgcolor("white")
+    first = turtle.Turtle()
+    first.shape("turtle")
+    first.color("#ecf0f1")
+    first.speed(0)
+    first.pensize(2)
+
+def draw_sqaure():
+    second= turtle.Screen()
+    second.shape("turtle")
+    second.color("pink")
+    second.speed(0)
+    second.pensize(2)
+    size=1
+    while (True):
+        second.forward(size)
+        second.right(91)
+        size = size + 1
+
+    window.exitonclick()
+
+draw_art()
+
+
+import colorsys
+import turtle
+
+
+
+
+
+
+
+
+jagger = turtle.Turtle()
+
+
+window = turtle.Screen()
+
+
+turtle.bgcolor("#2c3e50")
+
+
+jagger.speed(0)
+
+
+def drawRainbow():
+
+  for i in range(1000):
+
+
+      color = colorsys.hsv_to_rgb(i/1000.0, 1.0, 1.0)
+      jagger.color(color)
+      jagger.forward(i)
+      jagger.right(98)
+
+
+  jagger.color("#ecf0f1")
+  jagger.hideturtle()
+  jagger.penup()
+  jagger.setpos((20,0))
+
+
+
+drawRainbow()
+
+
+turtle.write('CTD',
+             True,
+             'center',
+             ('Arial', 100, 'bold'))
+
+
+
+window.exitonclick()
+
+
